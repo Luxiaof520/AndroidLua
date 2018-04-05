@@ -13,12 +13,12 @@ test = TestObject()
 test = bin.androidlua.TestObject()
 ```
 
-但不支持内部类，例如访问TestObject.TwoMethod时，得这么写
+但不支持内部类，例如访问 TestObject.TwoMethod 时，得这么写
 ```lua
 import "bin.androidlua.*"
 TwoMethod = TestObject_TwoMethod -- TestObject$TwoMethod
 ```
-包名的开头（bin、java、javax、com等）需要在 [LuaRunner.java](https://github.com/L-JINBIN/AndroidLua/blob/master/app/src/main/java/bin/androidlua/LuaRunner.java) 中添加
+包名的开头（bin、java、javax、com 等）需要在 [LuaRunner.java](https://github.com/L-JINBIN/AndroidLua/blob/master/app/src/main/java/bin/androidlua/LuaRunner.java) 中添加
 
 ### 2.优化方法重载
 
